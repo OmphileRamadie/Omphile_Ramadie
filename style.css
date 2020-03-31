@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap"); /*This link allows the use of google fonts*/
+
+* {
+  /* Using the everything selector to set the margin to zero and the padding to zero(removing  default stylings)*/
+  box-sizing: border-box; /*setting the box-sizing to border-box so that padding and border are included in the width and height*/
+  margin: 0; /*Setting margin to zero*/
+  padding: 0; /*Setting padding to zero*/
+}
+
+body {
+  /*Selecting the body*/
+  font-family: "Montserrat", sans-serif; /*Setting the font family to Montserrat and to sans-serif if the browser cant find Montserrat */
+  background: #2d2254;
+  color: #fff; /*setting the text color to white*/
+  font-size: 12px; /*setting the font-size*/
+  line-height: 1.6; /*setting the line height*/
+}
+
+h1,
+h2,
+h3,
+p {
+  /*selecting all h1,h2,h3 and p elements*/
+  margin-bottom: 10px; /*setting margin on the bottom*/
+}
+.secondary-text {
+  /*selecting all the elements with the class secondary-text*/
+  color: #f5c42f;
+}
+
+.section {
+  /*selecting all the elements with the class section*/
+  position: relative; /*setting the position to relative to its current position*/
+  padding: 0 20px; /*setting the padding on the top and bottom to zero and on the left and right to 20px*/
+}
+
+.section-top {
+  /*selecting all the elements with the class section-top*/
+  min-height: 200px; /*setting the minimum height*/
+}
+
+.section-top h1 {
+  /*selecting all h1 elements inside the element with the class section-top*/
+  font-size: 70px; /*setting the font-size*/
+  line-height: 1.3; /*setting the line-height*/
+}
+
+.section-top .content {
+  /*selecting all the elements with class content, inside the element with the class section-top*/
+  position: absolute; /*setting the position to absolute (positioned relative to its first positioned (not static) ancestor element)*/
+  top: 100px; /*position specification from the top*/
+  right: 320px; /*position specification from the right*/
+  width: 55%; /*setting the width*/
+}
+
+.section-stream {
+  /*selecting all the elements with the class of section-stream*/
+  min-height: 700px; /*setting the minimum height*/
+}
+
+.section-stream h2 {
+  /*selecting all the h2 elements inside the element with the class section-stream*/
+  font-size: 35px; /*setting the font-size*/
+}
+
+.section-stream .profile {
+  /*selecting the element with the class profile, inside of an element with the class section-stream*/
+  width: 27%; /*setting the width*/
+  position: absolute; /*setting the position to absolute (positioned relative to its first positioned (not static) ancestor element)*/
+  top: 100px; /*position specification from the top*/
+  left: 50px; /*position specification from the left*/
+}
+
+.section-stream .content {
+  /*selecting all the elements with the class content, inside of an element with the class section-stream*/
+  position: absolute; /*setting the position to absolute (positioned relative to its first positioned (not static) ancestor element)*/
+  width: 50%; /*setting the width*/
+  top: 130px; /*position specification from the top*/
+  right: 70px; /*position specification from the right*/
+}
+
+.section-stream .content > div,
+.section-grid > div {
+  /*selecting all the div elements inside the elements with the class section-stream content and the class section-grid*/
+  background: rgba(255, 255, 255, 0.1); /*setting the background color */
+  padding: 20px; /*setting the padding*/
+  margin-bottom: 20px; /*setting the margin on the bottom*/
+  border-radius: 10px; /*setting the border radius*/
+}
+
+.section-grid {
+  /*selecting all the elements with the class section-grid*/
+  display: grid; /*setting the display to grid*/
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /*dividing the grid into 3 equal column fractions*/
+  grid-gap: 30px; /*setting the grid gap */
+  text-align: center; /*aligning the text on the center*/
+}
+
+.section-grid p {
+  /*selecting all the p elements inside the element with the class of section-grid*/
+  color: #c5bbec;
+}
+
+.section-grid .dot {
+  /*selecting all the elements with the class of dot, inside the element with the class of section-grid*/
+  font-size: 40px; /*setting the font-size*/
+  padding-left: 2px; /*setting the  margin on the left*/
+}
